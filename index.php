@@ -18,4 +18,6 @@ $header .= "Reply-To: $email";
 if(!mail($to, $subject, $body, $header))
   http_response_code(500);
 }
+
+$data = DateTime::createFromFormat('d-m-Y H:i:s', $_POST['nascimento']);
 ?>
