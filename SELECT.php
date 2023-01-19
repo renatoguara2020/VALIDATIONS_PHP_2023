@@ -21,6 +21,6 @@ try{
 
 }catch(PDOException $e){
 
-    echo $e->getMessage() .''.$e->getTraceAsString();
+    echo $e->getMessage() .'<br>'.$e->getTraceAsString();
 
 }
