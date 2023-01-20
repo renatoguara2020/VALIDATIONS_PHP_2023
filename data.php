@@ -1,11 +1,17 @@
 <?php
-            $atual = new DateTime();
-            $especifica = new DateTime(' 1990-01-22');
-            $texto = new DateTime(' +1 month');
 
-            print_r($atual);
-            print_r($especifica);
-            print_r($texto);
 
-/* DateTime Object ( [date] => 2015-06-20 19:03:45 [timezone_type] => 3 [timezone] => UTC ) DateTime Object ( [date] => 1990-01-22 00:00:00 [timezone_type] => 3 [timezone] => UTC ) DateTime Object ( [date] => 2015-07-20 19:03:45 [timezone_type] => 3 [timezone] => UTC )
+date_default_timezone_set('America/Sao_Paulo');
+
+
+
+echo "Today is " . date("d/m/Y H:i:s" ) . "<br>";
+echo "Today is " . date("Y.m.d") . "<br>";
+echo "Today is " . date("Y-m-d") . "<br>";
+echo "Today is " . date("l");
+?>
+
+/* DateTime Object ( [date] => 2015-06-20 19:03:45 [timezone_type] => 3 [timezone] => UTC ) DateTime Object ( [date] =>
+1990-01-22 00:00:00 [timezone_type] => 3 [timezone] => UTC ) DateTime Object ( [date] => 2015-07-20 19:03:45
+[timezone_type] => 3 [timezone] => UTC )
 */
