@@ -3,7 +3,7 @@
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-
+//$nome = (isset($_POST["nome"]) && $_POST["nome"] != null) ? $_POST["nome"] : "";
 $firstname = $_POST["firstname"];
 
 $lastname = $_POST["lastname"];
