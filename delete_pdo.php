@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 $dbname = "testes_pdo";
 
-$id = 2;
+$id = 4;
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
