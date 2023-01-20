@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 //$nome = (isset($_POST["nome"]) && $_POST["nome"] != null) ? $_POST["nome"] : "";
 $firstname = $_POST["firstname"];
 
-$lastname = $_POST["lastname"];
+$lastname = filter_input(INPUT_POST, 'lastname', FILTER_SANITIZE_SPECIAL_CHARS);
 $username = $_POST["username"];
 $estados =  $_POST["estados"];
 $cidade = $_POST["cidade"];
