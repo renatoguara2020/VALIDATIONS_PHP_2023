@@ -4,11 +4,12 @@ $username = "root";
 $password = "";
 $dbname = "testes_pdo";
 
-$nome = (isset($_POST["nome"]) && $_POST["nome"] != null) ? $_POST["nome"] : "";
-$firstname = 'NATHAN BARBOSA SOARES';
-$lastname = 'BARBOSA SOARES';
-$email = 'nathan2020@gmail.com';
-
+$firstname = (isset($_POST["firstname"]) && $_POST["firstname"] != null) ? $_POST["firstname"] : "";
+$lastname = (isset($_POST["lastname"]) && $_POST["lastname"] != null) ? $_POST["lastname"] : "";
+$email = (isset($_POST["email"]) && $_POST["email"] != null) ? $_POST["email"] : "";
+$estado = (isset($_POST["estado"]) && $_POST["estado"] != null) ? $_POST["estado"] : "";
+$cidade = (isset($_POST["cidade"]) && $_POST["cidade"] != null) ? $_POST["cidade"] : "";
+$cep = (isset($_POST["cep"]) && $_POST["cep"] != null) ? $_POST["cep"] : "";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
