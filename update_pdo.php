@@ -7,6 +7,12 @@ $dbname = "testes_pdo";
 
 if(empty($_POST['firstname']) || empty($_POST['lastname']) || !filter_input($_POST['email'], FILTER_VALIDATE_EMAIL)){
 
+    http_response_code(500);
+
+}else{
+
+
+
 $firstname = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_SPECIAL_CHARS);
 $lastname = 'ARRUDA10000';
 $email = 'nathanzinho1000_soares2020@yahoo.com';
