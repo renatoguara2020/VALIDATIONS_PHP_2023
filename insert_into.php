@@ -21,7 +21,10 @@ try {
   $stmt->bindParam(':lastname', $lastname, PDO::PARAM_STR);
   $stmt->bindParam(':email', $email, PDO::PARAM_STR);
   $stmt->execute();
-  echo "New record created successfully";
+
+  if($stmt->rowCount() > 0){
+  echo "New record created successfully" .$stmt->rowCount() . " records were created successfully";
+  }
 } catch(PDOException $e) {
   echo  "<br>" . $e->getMessage() . "<br>" . $e->getTraceAsString() ;
 }
