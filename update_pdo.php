@@ -11,7 +11,7 @@ if(empty($_POST['firstname']) || empty($_POST['lastname']) || !filter_input($_PO
 
 }else{
 
-
+$lastname = (isset($_POST["nome"]) && $_POST["nome"] != null) ? $_POST["nome"] : "";
 
 $firstname = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_SPECIAL_CHARS);
 $lastname = 'ARRUDA10000';
