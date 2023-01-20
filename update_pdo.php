@@ -23,7 +23,13 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
+  if ($id != "") {
+
   $stmt = $conn->prepare("UPDATE usuarios SET firstname = :firstname, lastname = :lastname, email = :email WHERE id=:id");
+
+  }else{
+
+    $stmt = $conn->prepare("INSERT INTO usuarios (firtname, lastname, email) VALUES (:firtname, :lastname, :email)");
 
   // Prepare statement
   $stmt->bindParam(':id', $id);
