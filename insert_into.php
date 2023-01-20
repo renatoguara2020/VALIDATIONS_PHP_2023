@@ -43,9 +43,8 @@ try {
   if($stmt->rowCount() > 0){
 
     echo '<div class="alert alert-success" role="alert">
-  New record created successfully
-    
-  </div>';
+             New record created successfully  
+          </div>';
   //echo "New record created successfully" .$stmt->rowCount() . " records were created successfully";
   }
 } catch(PDOException $e) {
