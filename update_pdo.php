@@ -5,7 +5,7 @@ $password = "";
 $dbname = "testes_pdo";
 
 
-if(empty($_POST['firstname']) || empty($_POST['lastname']) || !filter_input($_POST['email'], FILTER_SANITIZE_EMAIL)){
+if(empty($_POST['firstname']) || empty($_POST['lastname']) || !filter_input($_POST['email'], FILTER_VALIDATE_EMAIL)){
 
 $firstname = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_SPECIAL_CHARS);
 $lastname = 'ARRUDA10000';
