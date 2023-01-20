@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 $dbname = "testes_pdo";
 
-
+$nome = (isset($_POST["nome"]) && $_POST["nome"] != null) ? $_POST["nome"] : "";
 $firstname = 'NATHAN BARBOSA SOARES';
 $lastname = 'BARBOSA SOARES';
 $email = 'nathan2020@gmail.com';
