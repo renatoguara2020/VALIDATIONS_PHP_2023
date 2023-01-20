@@ -30,7 +30,7 @@ try {
   }else{
 
     $stmt = $conn->prepare("INSERT INTO usuarios (firtname, lastname, email) VALUES (:firtname, :lastname, :email)");
-
+  }
   // Prepare statement
   $stmt->bindParam(':id', $id);
   $stmt->bindValue(':firstname', $firstname);
