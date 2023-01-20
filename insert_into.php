@@ -23,7 +23,7 @@ try {
   $stmt->execute();
   echo "New record created successfully";
 } catch(PDOException $e) {
-  echo $sql . "<br>" . $e->getMessage() . "<br>" . $e->getTraceAsString() ;
+  echo  "<br>" . $e->getMessage() . "<br>" . $e->getTraceAsString() ;
 }
 
 $conn = null;
