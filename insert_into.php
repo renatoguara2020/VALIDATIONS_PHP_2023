@@ -4,9 +4,8 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
-if(isset($_POST['firstname'])){
 $firstname = $_POST["firstname"];
-}
+
 $lastname = $_POST["lastname"];
 $username = $_POST["username"];
 $estados =  $_POST["estados"];
