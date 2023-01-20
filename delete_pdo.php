@@ -19,7 +19,7 @@ try {
   $stmt->execute();
   echo "Record deleted successfully";
 } catch(PDOException $e) {
-  echo  "<br>" . $e->getMessage() . '' .$e->getTraceAsString();
+  echo  "<br>" . $e->getMessage() . ' ' .$e->getTraceAsString();
 }
 
 $conn = null;
