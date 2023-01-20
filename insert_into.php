@@ -46,7 +46,7 @@ try {
   New record created successfully
     
   </div>';
-  echo "New record created successfully" .$stmt->rowCount() . " records were created successfully";
+  //echo "New record created successfully" .$stmt->rowCount() . " records were created successfully";
   }
 } catch(PDOException $e) {
   echo  "<br>" . $e->getMessage() . "<br>" . $e->getTraceAsString() ;
