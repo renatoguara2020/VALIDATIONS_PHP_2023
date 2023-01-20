@@ -43,7 +43,7 @@ try {
   // echo a message to say the UPDATE succeeded
   echo $stmt->rowCount() . " records UPDATED successfully";
 } catch(PDOException $e) {
-  echo "<br>" . $e->getMessage();
+  echo "<br>" . $e->getMessage() . '<br>'. $e->getTraceAsString();
 }
 
 }
