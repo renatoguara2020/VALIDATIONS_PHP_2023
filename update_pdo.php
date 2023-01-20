@@ -4,10 +4,12 @@ $username = "root";
 $password = "";
 $dbname = "testes_pdo";
 
+$erros = array();
 
 if(empty($_POST['firstname']) || empty($_POST['lastname']) || !filter_input($_POST['email'], FILTER_VALIDATE_EMAIL)){
 
     http_response_code(500);
+    $erros[] =  'Favor preencher os campos';
 
 }else{
 
